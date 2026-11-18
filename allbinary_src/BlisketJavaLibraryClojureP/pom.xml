@@ -1,0 +1,147 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary.business</groupId>
+    <artifactId>BlisketJavaLibraryPClojure</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>BlisketJavaLibraryPClojure</name>
+    <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+    
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    
+    <modules>
+
+        <!--
+        <module>../../j2me/AllBinaryJ2MELibraryClojureP</module>
+        -->
+        <!--
+        <module>../data/DataJavaLibraryClojureM</module>
+        -->
+
+        <module>../licensing/TestServiceClientInfoJavaLibraryClojureM</module>        
+
+        <module>../data/DataTableInterfacesClojureM</module>
+        
+        <module>../QueueJavaLibraryClojureM</module>
+        
+        <!--
+        <module>../TokenizerJavaLibraryClojureM</module>
+        -->
+
+        <module>../logging/LogConfigTypeFreeblisketJavaLibraryClojureM</module>
+
+        <module>../JavaUtilLibraryClojureM</module>
+        <module>../NullInitInfoJavaLibraryClojureM</module>        
+        <module>../InitInfoJavaLibraryClojureM</module>
+        <module>../PreLoaderHttpJavaLibraryClojureM</module>
+        
+        <module>../TagsBaseJavaLibraryClojureM</module>
+        <module>../CustomLoaderJavaLibraryClojureM</module>
+        
+        <!--
+        <module>../logic/data/file/FileJ2SEJavaLibraryClojureM</module>
+        <module>../logic/data/file/FileJavaLibraryClojureM</module>
+        -->
+
+        <module>../data/SQLAllBinaryJavaLibraryClojureM</module>
+
+        <!--
+        <module>../licensing/FileLicenseInitInfoJavaLibraryClojureM</module>
+        -->
+
+        <module>../DocumentObjectModelJavaLibraryClojureM</module>
+
+        <module>../VisualStyleJavaLibraryClojureM</module>
+
+        <module>../ConfigurationJavaLibraryClojureM</module>
+
+        <module>../VisualTransformBaseJavaLibraryClojureM</module>
+
+        <module>../CategoryBaseJavaLibraryClojureM</module>
+        <module>../CategoryJavaLibraryClojureM</module>
+
+        <module>../UserJavaLibraryClojureM</module>
+
+        <module>../PaymentGatewayBaseJavaLibraryClojureM</module>
+
+        <module>../data/vo/EntitiesBlisketVOJavaLibraryClojureM</module>
+        <module>../PaymentGatewayJavaLibraryClojureM</module>
+        <module>../data/vo/EntitiesOrderHistoryVOJavaLibraryClojureM</module>
+        <module>../data/vo/EntityPaymentGatewayVOJavaLibraryClojureM</module>
+        <module>../data/vo/EntityStoreFrontVOJavaLibraryClojureM</module>
+
+        <module>../data/EntitiesBlisketBaseInterfacesJavaLibraryClojureM</module>
+        <module>../data/EntitiesBlisketBaseJavaLibraryClojureM</module>
+        
+        <module>../data/EntitiesAdvertisementBaseJavaLibraryClojureM</module>
+        <module>../data/EntityOrderHistoryJavaLibraryClojureM</module>
+        <module>../data/EntityPaymentGatewayJavaLibraryClojureM</module>
+        <module>../data/EntityVisualTransformJavaLibraryClojureM</module>
+        <module>../data/EntityUserJavaLibraryClojureM</module>
+        <module>../data/EntityWorkflowJavaLibraryClojureM</module>
+
+        <module>../SMTPConfigurationJavaLibraryClojureM</module>
+        <module>../SMTPBaseJavaLibraryClojureM</module>
+
+        <module>../VisualTransformJavaLibraryClojureM</module>
+
+        <module>../../replace_these_stub_projects/allbinary_src/YourRuntimeEnvironmentJavaLibraryClojureM</module>
+        <module>../GatewayJavaLibraryClojureM</module>
+        
+        <module>../WorkflowBaseJavaLibraryClojureM</module>
+        <module>../WorkflowJavaLibraryClojureM</module>
+
+        <module>../IdGeneratorUsingFilesJavaLibraryClojureM</module>
+        <module>../BlisketPreVOJavaLibraryClojureM</module>
+
+        <!-- 
+        EntitiesOrderHistoryVOJavaLibrary
+        UserJavaLibrary
+        -->
+        
+        <module>../BlisketVOJavaLibraryClojureM</module>
+
+        <module>../UserCommerceJavaLibraryClojureM</module>
+
+        <module>../CustomizerValidatorsJavaLibraryClojureM</module>
+
+        <!-- 
+        AllBinaryCacheForShiftOneJavaLibrary
+        AllBinaryJSECacheJavaLibrary
+        ColorJavaLibrary
+        ImageJavaLibrary
+        -->
+        
+        <module>../logic/data/file/FileMediaJ2SEJavaLibraryClojureM</module>
+        <module>../BlisketBaseJavaLibraryClojureM</module>
+
+        <module>../logging/LoggingGAEAllClojureM</module>
+        <module>../BlisketJavaLibraryClojureM</module>
+        
+    </modules>
+
+</project>
+

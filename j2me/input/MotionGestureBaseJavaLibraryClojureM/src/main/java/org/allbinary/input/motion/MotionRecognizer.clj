@@ -1,0 +1,53 @@
+;;
+;; AllBinary Open License Version 1
+;; Copyright (c) 2011 AllBinary
+;; 
+;; By agreeing to this license you and any business entity you represent are
+;; legally bound to the AllBinary Open License Version 1 legal agreement.
+;; 
+;; You may obtain the AllBinary Open License Version 1 legal agreement from
+;; AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+;; 
+;; Created By: Travis Berthelot
+;;  
+;; Generated Code Do Not Modify
+;; package org.allbinary.input.motion
+
+(ns MotionRecognizer)
+
+(JR/register 'MotionRecognizer nil '[])
+
+(def jclinit-state (atom 0))
+(declare jclinit)
+
+(defn jclinit []
+  (let [this nil]
+    nil))
+
+(defn jinitfields [this]
+  this)
+
+(defn jinit_0 [this]
+  nil
+  (jinitfields this))
+
+(defn jnew_0 []
+  (let [o (JR/alloc 'MotionRecognizer)] (jinit_0 o) o))
+
+    
+(defn jm_processStartMotionEvent_4 [this p_x p_y p_deviceId p_modifiers]
+  (let [ l_x (volatile! p_x) l_y (volatile! p_y) l_deviceId (volatile! p_deviceId) l_modifiers (volatile! p_modifiers)]
+        nil))
+
+    
+(defn jm_processEndMotionEvent_4 [this p_x p_y p_deviceId p_modifiers]
+  (let [ l_x (volatile! p_x) l_y (volatile! p_y) l_deviceId (volatile! p_deviceId) l_modifiers (volatile! p_modifiers)]
+        nil))
+
+    
+(defn jm_processDraggedMotionEvent_4 [this p_x p_y p_deviceId p_modifiers]
+  (let [ l_x (volatile! p_x) l_y (volatile! p_y) l_deviceId (volatile! p_deviceId) l_modifiers (volatile! p_modifiers)]
+        nil))
+
+
+

@@ -1,0 +1,142 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.allbinary</groupId>
+  <artifactId>CombatGameJavaLibraryPOMClojure</artifactId>
+  <packaging>pom</packaging>
+  <!-- AllBinary Platform Version Start -->
+  <version>1.0.0-SNAPSHOT</version>
+  <!-- AllBinary Platform Version End -->
+
+  <name>CombatGameJavaLibraryPOMClojure</name>
+  <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+    <properties>
+        <buildLabel>${project.version}</buildLabel>
+        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+    </properties>
+
+    <modules>
+
+        <!--
+
+        -->
+
+        <module>../../games/TickableJavaLibraryClojureM</module>
+
+        <module>../../games/CommonHeadsUpDisplayLibraryClojureM</module>
+
+        <module>../../../physics/MovementJavaLibraryClojureM</module>
+        <!--        -->
+        <module>../../games/PartsJavaLibraryClojureM</module>
+        <module>../../games/PickupGameJavaLibraryClojureM</module>
+
+        <module>../../../allbinary_src/licensing/HardCodedLicenseInitInfoJavaLibraryClojureM</module>
+        <module>../../../allbinary_src/licensing/FileLicenseInitInfoJavaLibraryClojureM</module>
+        <module>../../../allbinary_src/licensing/ClientInfoLicensingJavaLibraryClojureM</module>
+
+        <module>../../games/licensing/PartnerJ2MEJavaLibraryClojureM</module>
+        <!--<module>../../games/licensing/PartnerHTMLJavaLibraryClojureM</module>-->
+        <!--<module>../../games/licensing/PartnerAndroidJavaLibraryClojureM</module>-->
+        <module>../../games/licensing/NoGameLicensingJavaLibraryClojureM</module>
+        <module>../../games/licensing/GameLicensingOnlyDemoJavaLibraryClojureM</module>
+        <!--<module>../../games/licensing/GameLicensingOnlyNormalJavaLibraryClojureM</module>-->
+        <module>../../games/licensing/GameLicensingBaseJavaLibraryClojureM</module>
+
+        <!--
+        <module>../../games/GameScoresBaseLibraryClojureM</module>
+        <module>../../games/GameScoresBaseHTMLLibraryClojureM</module>
+        <module>../../games/GameScoresBaseJ2MELibraryClojureM</module>
+        -->
+        <module>../../games/GameScoresLocalJavaLibraryClojureM</module>
+        <!--<module>../../games/GameScoresRemoteAndLocalJavaLibraryClojureM</module>-->
+
+        <module>../../../store/ThirdPartyStoreJavaLibraryClojureM</module>
+        <module>../../../store/NoThirdPartyStoreJavaLibraryClojureM</module>
+
+        <module>../../media/graphics/layer/CollisionLayerJavaLibraryClojureM</module>
+        <module>../../games/CollisionLibraryClojureM</module>
+
+        <module>../../games/multiplayer/AllBinaryGameClientBaseNullJavaLibraryClojureM</module>
+
+        <module>../../games/PickupLayerJavaLibraryClojureM</module>
+
+        <module>../../games/DamageGameJavaLibraryClojureM</module>
+        <module>../../games/DropJavaLibraryClojureM</module>
+        <module>../../games/WeaponLayerJavaLibraryClojureM</module>
+
+        <module>../../games/CombatGameJavaLibraryClojureM</module>
+        <module>../../games/LifeJavaLibraryClojureM</module>
+
+        <module>../../games/CommonHeadsUpDisplayCombatGameLibraryClojureM</module>
+        <module>../../games/LifeOrDeathDataJavaLibraryClojureM</module>
+
+        <module>../../games/BasicWeaponPartsJavaLibraryClojureM</module>
+        <module>../../games/weapon/WeaponPropertiesJavaLibraryClojureM</module>
+
+        <module>../../games/weapon/WeaponMineJavaLibraryClojureM</module>
+
+        <!--
+        <module>../../media/graphics/effects/fireworks/FireworksJavaLibraryClojureM</module>
+        -->
+
+        <module>../../media/graphics/geography/map/TerrainEventJavaLibraryClojureM</module>
+
+<!--
+        <module>../../media/graphics/geography/map/BasicPlatformGeographicMapJavaLibraryClojureM</module>
+        -->
+
+        <!--
+        <module>../../media/graphics/geography/map/RaceTrackClojureP</module>
+        -->
+
+        <!--
+        XmlRpcJavaLibrary
+        RemoteXmlRpcJavaLibrary
+
+        Since POMs are built before the other libs is it best to handle this differently
+        ../../
+        <module>../../../../workclojure/j2me/games/strategy/rts/RTSGameJavaLibraryClojureP</module>
+        -->
+
+        <module>../../media/graphics/OtherGraphicsMediaLibraryClojureP</module>
+
+        <module>../../input/NoTouchButtonResourceAnimationJavaLibraryClojureM</module>
+        <module>../../input/TouchButtonResourceAnimationJavaLibraryClojureM</module>
+        <module>../../input/TouchButtonResourceOpenGLESAnimationJavaLibraryClojureM</module>
+
+        <module>../../input/TrackingEventJavaLibraryClojureM</module>
+        <module>../../../game/behavior/BehaviorLibraryClojureP</module>
+
+        <module>../../media/sound/OtherSoundMediaLibraryClojureP</module>
+
+        <module>../../../allbinary_src/licensing/ApplicationConfigurationJavaLibraryClojureM</module>
+        <module>../../../allbinary_src/licensing/ApplicationConfigurationNoFSJavaLibraryClojureM</module>
+        <!--<module>../../input/AllBinaryMagneticFieldSensorJavaLibraryClojureM</module>-->
+        <!--<module>../../android/VirtualKeyboardJavaLibraryClojureM</module>-->
+
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
+

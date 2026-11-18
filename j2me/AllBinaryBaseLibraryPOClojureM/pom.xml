@@ -1,0 +1,88 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary</groupId>
+    <artifactId>AllBinaryBaseLibraryPOMClojure</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>AllBinaryBaseLibraryPOMClojure</name>
+    <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+    
+    <properties>
+        <buildLabel>${project.version}</buildLabel>
+        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+    </properties>
+
+    <modules>
+        <module>../CommonJavaLibraryClojureM</module>
+        <module>../TempBaseJavaLibraryClojureM</module>
+        
+        <module>../../allbinary_src/LogClojureM</module>
+        <module>../../allbinary_src/allbinary_src_designpatterns_srcClojureM</module>
+        <module>../../allbinary_src/data/BaseDataJavaLibraryClojureM</module>
+        <module>../../allbinary_src/cache/BaseCacheJavaLibraryClojureM</module>
+        <module>../../allbinary_src/logic/BasePreloaderJavaLibraryClojureM</module>
+        <module>../../allbinary_src/logic/BasePreloaderJ2MEJavaLibraryClojureM</module>
+
+        <module>../ExceptionHTMLJavaLibraryClojureM</module>
+        <module>../J2MEExceptionLibraryClojureM</module>
+        <module>../../allbinary_src/J2SEExceptionLibraryClojureM</module>
+        <module>../J2MEUtilJavaLibraryClojureM</module>
+        <module>../J2MEColorJavaLibraryClojureM</module>
+        <module>../EventJ2MELibraryClojureM</module>
+
+        <module>../../allbinary_src/LogNoPlatformJavaLibraryClojureM</module>
+        <module>../../allbinary_src/LogJ2MEJavaLibraryClojureM</module>
+        <module>../../allbinary_src/LogJ2SEJavaLibraryClojureM</module>
+        <!--<module>../../allbinary_src/LogAndroidJavaLibraryClojureM</module>-->
+        <module>../logging/LoggingNoneClojureM</module>
+        <module>../logging/LoggingJ2MEAllClojureM</module>
+        <module>../logging/LoggingJ2MEExceptionClojureM</module>
+        <!--<module>../logging/LoggingAndroidAllClojureM</module>-->
+        <!--
+        //While it is a possible dependency option it really does not fit here
+        //as such it is actually build in the final POM builds instead
+        <module>../logging/LoggingRemoteExceptionClojureM</module>  
+        -->
+        
+        <module>../J2MEWindowingJavaLibraryClojureM</module>
+        
+        <module>../lib/BaseMathLibraryClojureM</module>
+        <module>../lib/BasicMathLibraryClojureM</module>
+        
+        <module>../../allbinary_src/ThreadLibraryClojureM</module>
+        <!--<module>../../allbinary_src/ThreadHTMLLibraryClojureM</module>-->
+        <module>../../replace_these_stub_projects/allbinary_src/NoneOnlyJavaLibraryClojureM</module>
+        <module>../../allbinary_src/ThreadJ2MELibraryClojureM</module>
+        <module>../time/TimeJavaLibraryClojureM</module>
+
+        <module>../statistics/ApplicationStatisticsJ2SELibraryClojureM</module>
+        <module>../statistics/ApplicationStatisticsJ2MELibraryClojureM</module>
+        <module>../statistics/ApplicationStatisticsJavaLibraryClojureM</module>
+
+        <module>../../allbinary_src/logging/BasicLogConfigTypeJavaLibraryClojureM</module>
+        <module>../../allbinary_src/logging/LogConfigTypeGameClientJavaLibraryClojureM</module>
+
+        <module>../../allbinary_src/hardware/HardwareLibraryPOClojureM</module>
+
+        <module>../lib/TrigBaseLibraryClojureM</module>
+
+    </modules>
+
+</project>
+

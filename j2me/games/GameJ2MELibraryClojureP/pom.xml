@@ -1,0 +1,192 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.allbinary</groupId>
+  <artifactId>GameJ2MELibraryPOMClojure</artifactId>
+  <packaging>pom</packaging>
+  <!-- AllBinary Platform Version Start -->
+  <version>1.0.0-SNAPSHOT</version>
+  <!-- AllBinary Platform Version End -->
+
+  <name>GameJ2MELibraryPOMClojure</name>
+  <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+
+
+    <modules>
+
+        <!--
+        NoGyroSensorLibrary
+
+        -->
+        <!--<module>../../android/AndroidUtilJavaLibraryClojureM</module>-->
+
+        <module>../../../allbinary_src/security/SimpleCryptLibraryClojureM</module>
+        <!--
+        <module>../../../../working_thirdpartyclojure/security/BouncyCastleDESJavaLibraryClojureM</module>
+        <module>../../../../working_thirdpartyclojure/communication/XmlRpc/XmlRpcJavaLibraryClojureM</module>
+        -->
+        <module>../../../allbinary_src/TokenizerJavaLibraryClojureM</module>
+        <module>../../../allbinary_src/security/BasicSecurityJavaLibraryClojureM</module>
+        <!--<module>../../../replace_these_stub_projects/security/YourCryptFileJavaLibraryClojureM</module>-->
+        <module>../../../replace_these_stub_projects/security/YourSecurityJavaLibraryClojureM</module>
+        <module>../../../replace_these_stub_projects/communication/YourXmlRpcJavaLibraryClojureM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MEOnlyJavaLibraryClojureM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MECompatibilityJavaLibraryClojureM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MEJsInteropCompatibilityJavaLibraryClojureM</module>
+
+        <module>../../DebugJavaLibraryClojureM</module>             
+        <module>../../ResourceLibraryClojureM</module>
+        <module>../../ResourceJ2MEJavaLibraryClojureM</module>
+        <!--<module>../../AndroidResourceLibraryClojureM</module>-->
+        <!--<module>../../../allbinary_src/hardware/AndroidSystemJavaLibraryClojureM</module>-->
+
+        <module>../../../game/behavior/ArtificialIntelligenceLibraryClojureM</module>
+
+        <module>../../media/graphics/PlatformNullImageJavaLibraryClojureM</module>
+        <module>../../media/graphics/ImageCacheBaseJ2MEJavaLibraryClojureM</module>
+        <module>../../media/graphics/ImageCacheJ2MEJavaLibraryClojureM</module>
+        <module>../../../graphics/opengl/OpenGLJ2MENoneJavaLibraryClojureM</module>
+        <module>../../../graphics/opengl/OpenGLNoneJavaLibraryClojureM</module>
+        <module>../../../graphics/opengl/OpenGLNoneOtherJavaLibraryClojureM</module>
+        <module>../../../graphics/opengl/OpenGLNoneOther2JavaLibraryClojureM</module>
+        <module>../../../graphics/opengl/OpenGLESBaseJ2MEJavaLibraryClojureM</module>
+
+        <module>../../media/graphics/animation/AnimationLibraryClojureM</module>
+        <module>../../media/graphics/animation/RotationAnimationJavaLibraryClojureM</module>
+
+        <module>../../games/GameInputLibraryClojureM</module>
+
+        <module>../../games/GameScoresBaseJavaLibraryClojureM</module>
+        <module>../../games/GameScoresBaseJ2MELibraryClojureM</module>
+
+        <module>../../statistics/ApplicationStatisticsHTMLLibraryClojureM</module>
+        <!--
+        <module>../../games/GameConfigurationHTMLJavaLibraryClojureM</module>
+        -->
+        <module>../../games/GameConfigurationJ2MEJavaLibraryClojureM</module>   
+        <module>../../games/GameConfigurationJavaLibraryClojureM</module>
+
+        <module>../../games/GameIntermissionLibraryClojureM</module>
+
+        <module>../../GroupLibraryClojureM</module>
+
+        <module>../../input/NoSensorJavaLibraryClojureM</module>
+
+        <module>../../input/AllBinarySensorJavaLibraryClojureM</module>
+
+        <module>../../input/platform/me/GameInputMEJavaLibraryClojureM</module>
+        <module>../../input/platform/me/GameInputMEKeyOnlyJavaLibraryClojureM</module>
+        <module>../../input/platform/me/GameInputMEMotionJavaLibraryClojureM</module>
+        <module>../../input/platform/pc/GameInputPCBaseJavaLibraryClojureM</module>
+        <module>../../input/platform/pc/GameInputPCJavaLibraryClojureM</module>
+        <module>../../input/platform/pc/GameInputPCKeyOnlyJavaLibraryClojureM</module>
+        <module>../../input/platform/pc/GameInputPCMotionJavaLibraryClojureM</module>
+        <module>../../input/platform/pc/GameInputSwtJavaLibraryClojureM</module>
+
+        <module>../../input/AllBinaryGyroSensorJavaLibraryClojureM</module>
+        <module>../../input/MotionGestureJavaLibraryClojureM</module>
+        
+        <module>../../input/MotionGestureBaseJavaLibraryClojureM</module>
+
+        <module>../../games/GameInputPersistanceLibraryClojureM</module>
+        <module>../../games/GameInputNoPersistanceLibraryClojureM</module>
+        
+        <module>../../lib/VectorThreeDimensionalLibraryClojureM</module>
+        <module>../../input/AllBinaryAccelerometerSensorJavaLibraryClojureM</module>
+        <module>../../input/NoGyroSensorJavaLibraryClojureM</module>
+        <module>../../input/JSEGyroSensorJavaLibraryClojureM</module>
+        <!--
+        <module>../../input/android/</module>
+        <module>../../input/platform/android/GameInputAndroidBaseJavaLibraryClojureM</module>
+        -->
+
+        <module>../../media/sound/BasicPlayerJavaLibraryClojureM</module>
+        <module>../../media/sound/BasicPlayerMIDP2JavaLibraryClojureM</module>
+        <module>../../media/sound/NoPlayerJavaLibraryClojureM</module>
+        <module>../../media/sound/SoundJ2MELibraryClojureM</module>
+
+        <module>../../media/motion/AllBinaryVibrationJavaLibraryClojureM</module>
+        <module>../../media/motion/NoVibrateJavaLibraryClojureM</module>
+        <!--<module>../../media/motion/VibrateAndroidJavaLibraryClojureM</module>-->
+
+        <module>../../media/graphics/NullCustomUIJavaLibraryClojureM</module>
+        <module>../../media/graphics/NullCustomUIBaseJavaLibraryClojureM</module>
+
+        <module>../../media/graphics/FormValidationJavaLibraryClojureM</module>
+        
+        <module>../../media/graphics/FormJavaLibraryClojureM</module>
+        <module>../../media/graphics/FormBaseJavaLibraryClojureM</module>
+        <!--
+        <module>../../media/graphics/FormJMEJavaLibraryClojureM</module>
+        -->
+        <module>../../../j2me/media/graphics/FormJMEJavaLibraryClojureM</module>
+
+        <module>../../media/graphics/animation/AnimationResourceJavaLibraryClojureM</module>
+        <module>../../media/graphics/animation/TransitionAnimationJavaLibraryClojureM</module>
+        <module>../../media/graphics/animation/NoTransitionAnimationJavaLibraryClojureM</module>
+        <!--
+        AndroidTransitionAnimationJavaLibraryM
+        -->
+        <module>../../media/graphics/animation/GameAnimationJavaLibraryClojureM</module>
+        <module>../../games/GameResourceJavaLibraryClojureM</module>
+        <module>../../games/GameSoundsJavaLibraryClojureM</module>
+
+        <module>../../input/TouchInputLibraryClojureP</module>
+
+        <module>../../media/MediaDataClojureM</module>
+        <module>../../media/sound/NotDeviceSpecificNoMediaMIDP1LibraryClojureM</module>
+
+        <module>../../../allbinary_src/content/ContentNoneJavaLibraryClojureM</module>
+        <!--<module>../../../allbinary_src/content/ContentAndroidJavaLibraryClojureM</module>-->
+
+        <module>../../games/GameConfigurationFormJavaLibraryClojureM</module>
+
+        <module>../../FullScreenNoneJavaLibraryClojureM</module>
+        <!--
+        <module>../../FullScreenJavaLibraryClojureM</module>
+        -->
+
+        <module>../../../physics/VelocityLibraryClojureM</module>
+
+        <module>../../games/weapon/SoundsBasicWeaponsJavaLibraryClojureM</module>
+
+        <module>../../lib/TrigJ2MELibraryClojureM</module>
+
+        <module>../../media/graphics/geography/map/LayerPlacementLibraryClojureM</module>
+        <module>../../media/graphics/layer/AllBinaryLayerJavaLibraryClojureM</module>
+
+        <module>../../ScreenCaptureNoneJavaLibraryClojureM</module>
+        
+        <module>../licensing/GameLicensingNullJavaLibraryClojureM</module>
+        
+        <module>../../business/advertisement/AllBinaryAdvertisementClientJavaLibraryClojureM</module>
+        <module>../../business/advertisement/AdvertisementClientNoneJavaLibraryClojureM</module>
+
+        <module>../GameNotificationJavaLibraryClojureM</module>
+
+        <module>../../../graphics/opengl/NoSWTJavaLibraryClojureM</module>
+        <module>../../../graphics/opengl/SWTWithoutJOGLJavaLibraryClojureM</module>
+        <module>../SWTJavaLibraryClojureM</module>
+        <module>../GameJ2MELibraryClojureM</module>
+        
+        <!--
+        <module>../GameJ2MEOptionalLibraryPOClojureM</module>
+        -->
+    
+    </modules>
+
+</project>
+

@@ -1,0 +1,87 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary</groupId>
+    <artifactId>OtherGraphicsMediaLibraryPClojure</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>OtherGraphicsMediaLibraryPClojure</name>
+    <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+
+    <properties>
+        <buildLabel>${project.version}</buildLabel>
+        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+    </properties>
+
+    <modules>
+
+        <!--
+        -->
+        <module>../../graphics/animation/vector/VectorAnimationBaseJavaLibraryClojureM</module>
+
+        <module>../../graphics/animation/vector/VectorAnimationJ2MEJavaLibraryClojureM</module>
+        <module>../../graphics/animation/vector/VectorAnimationJavaLibraryClojureM</module>
+
+        <module>../../graphics/VectorJavaLibraryClojureM</module>
+
+        <module>../../graphics/BoundsJavaLibraryClojureM</module>
+
+        <module>../../../../graphics/opengl/OpenGLESNullImageJavaLibraryClojureM</module>
+        <module>../../../../graphics/opengl/OpenGLESNullImageJ2MEJavaLibraryClojureM</module>
+
+        <module>../../graphics/animation/image/AllBinaryImageAnimationJavaLibraryClojureM</module>
+        <module>../../graphics/animation/sprite/AllBinarySpriteAnimationJavaLibraryClojureM</module>
+
+        <!--
+        ../../
+        <module>../../../../../workclojure/j2me/media/graphics/animation/sprite/AllBinaryQuarterSpriteAnimationJavaLibraryClojureM</module>
+        -->
+        <!--
+        ../../
+        <module>../../../../../workclojure/j2me/media/graphics/animation/sprite/AllBinaryQuarterSpriteAnimation2JavaLibraryClojureM</module>
+        -->
+
+        <module>../../graphics/animation/image/ImageJ2MEJavaLibraryClojureM</module>
+        <!--
+        <module>../../graphics/animation/image/ImageHTMLJavaLibraryClojureM</module>
+        -->
+        <!--<module>../../graphics/animation/image/ImageJ2SEJavaLibraryClojureM</module>-->
+        <!--
+        <module>../../graphics/animation/image/ImageAndroidJavaLibraryClojureM</module>
+        -->
+        <!--
+        <module>../../graphics/animation/image/ImageSwtJ2SEJavaLibraryClojureM</module>
+        -->
+        
+        <!--
+        ../../
+        <module>../../../../../workclojure/j2me/media/graphics/layer/AllBinaryTiledLayerJavaLibraryClojureM</module>
+        <module>../../graphics/layer/AllBinaryTiledLayerJavaLibraryClojureM</module>
+        -->
+
+        <!-- Not used in Platform Libraries -->
+        <module>../../graphics/GraphicsBasicImageJavaLibraryClojureM</module>
+        <!--
+        -->
+        <module>../../graphics/animation/image/AllBinaryImageAnimationRotationJavaLibraryClojureM</module>
+
+    </modules>
+
+</project>
+
